@@ -37,7 +37,7 @@ home目录/
 
 
 
-然后在 `home目录/dotfiles` 下，执行例如 `stow emacs` 即可自动将 `.emacs.d` 链接到家目录下，执行例如 `stow vim `stow zshell` 等同理。
+然后在 `home目录/dotfiles` 下，执行例如 `stow emacs` 即可自动将 `.emacs.d` 链接到家目录下，执行例如 `stow vim ` `stow zshell` 等同理。
 
 
 
