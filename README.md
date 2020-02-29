@@ -41,3 +41,4 @@ home目录/
 
 
 
+具体详见 http://farseerfc.me/zhs/using-gnu-stow-to-manage-your-dotfiles.html
