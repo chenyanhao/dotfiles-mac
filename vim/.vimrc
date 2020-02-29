@@ -37,6 +37,16 @@ endif
 "========================== end ===========================================
 
 
+"=============================Vim-Plugin start ===============================
+call plug#begin('~/.vim/plugged')
+Plug 'colepeters/spacemacs-theme.vim'
+" Plug 'terryma/vim-expand-region'
+" Plug 'tpope/vim-surround'
+call plug#end()
+"=============================Vim-Plugin start ===============================
+
+colorscheme spacemacs-theme
+
 
 
 "========================== start ===========================================
