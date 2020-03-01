@@ -43,11 +43,15 @@ call plug#begin('~/.vim/plugged')
 Plug 'colepeters/spacemacs-theme.vim'
 Plug 'terryma/vim-expand-region'
 Plug 'tpope/vim-surround'
-Plug 'junegunn/fzf'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'scrooloose/nerdtree'
+Plug 'Yggdroot/LeaderF', { 'do': '.\install.bat' }
 Plug 'vim-airline/vim-airline'
+Plug 'scrooloose/nerdtree'
 Plug 'xuyuanp/nerdtree-git-plugin'
+Plug 'easymotion/vim-easymotion'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'preservim/nerdcommenter'
 call plug#end()
 "=============================Vim-Plugin start ===============================
 
