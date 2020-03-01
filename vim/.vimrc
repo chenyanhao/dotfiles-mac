@@ -43,6 +43,11 @@ call plug#begin('~/.vim/plugged')
 Plug 'colepeters/spacemacs-theme.vim'
 Plug 'terryma/vim-expand-region'
 Plug 'tpope/vim-surround'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'xuyuanp/nerdtree-git-plugin'
 call plug#end()
 "=============================Vim-Plugin start ===============================
 
