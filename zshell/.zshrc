@@ -93,7 +93,6 @@ alias la="ls -a"
 alias ll="ls -l"
 alias subl='open -a "Sublime Text"'
 alias emacs='open -a "emacs"'
-alias macdown='open -a "MacDown"'
 alias vscode='open -a "Visual Studio Code"'
 # alias rm='safe-rm'
 
@@ -102,12 +101,9 @@ alias vscode='open -a "Visual Studio Code"'
 # ssh -t root@112.74.56.247 -p 22
 
 
-
-
 # export JAVA_HOME=`/usr/libexec/java_home -v 1.6`
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export PATH=$JAVA_HOME/bin:$PATH
-
 
 
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
