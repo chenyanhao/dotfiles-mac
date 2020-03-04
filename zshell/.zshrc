@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/haha/.oh-my-zsh
+export ZSH=/Users/$USER/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -91,10 +91,9 @@ alias vi="vim"
 alias vim="mvim"
 alias la="ls -a"
 alias ll="ls -l"
-alias subl='open -a "Sublime Text"'
+alias lla="ls -la"
 alias emacs='open -a "emacs"'
 alias vscode='open -a "Visual Studio Code"'
-# alias rm='safe-rm'
 
 # ssh -t 用户名@IP地址 -p 端口
 # example:
@@ -102,8 +101,9 @@ alias vscode='open -a "Visual Studio Code"'
 
 
 # export JAVA_HOME=`/usr/libexec/java_home -v 1.6`
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
-export PATH=$JAVA_HOME/bin:$PATH
+# export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+# export PATH=$JAVA_HOME/bin:$PATH
+export PATH=/usr/local/bin:$PATH
 
 
-export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
