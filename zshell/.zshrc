@@ -103,6 +103,8 @@ alias vscode='open -a "Visual Studio Code"'
 # export JAVA_HOME=`/usr/libexec/java_home -v 1.6`
 # export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 # export PATH=$JAVA_HOME/bin:$PATH
+#
+# put /usr/local/bin first because homebrew's installation is under this path
 export PATH=/usr/local/bin:$PATH
 
 
