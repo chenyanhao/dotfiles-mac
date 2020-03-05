@@ -163,7 +163,7 @@ set shiftwidth=4
 
 "让 vim 把连续数量的空格视为一个制表符，这样按退格键时可以一次删除 4 个空格
 set softtabstop=4
-"设置按退格键时可以一次删除4个空格
+"设置按退格键时可以一次删除4个空格，即 hungry-delete
 set smarttab
 
 "将Tab键自动转换成空格 真正需要Tab键时使用[Ctrl + V + Tab]
@@ -226,7 +226,7 @@ nnoremap w+ <C-w>+
 nnoremap w- <C-w>-
 nnoremap w> <C-w>>
 nnoremap w< <C-w><
-nnoremap <leader>ww <C-w><C-w>  “ 切换窗口
+nnoremap <leader>ww <C-w><C-w>  " 切换窗口
 
 " 在 insert 和 command 下可以使用 EMACS 快捷键
 " moving aroung in insert mode
