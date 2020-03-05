@@ -18,6 +18,9 @@ set smarttab
 " 设置格式化时制表符占用空格数，默认为 8
 set shiftwidth=4
 
+" 共享外部剪切板
+set clipboard=unnamed
+
 " 定义快捷键的前缀，即<Leader>
 let mapleader = "\<Space>"
 
@@ -70,3 +73,18 @@ tnoremap <leader>tn    <C-\><C-n>
 " 直接退出终端模式并退出(e-exit)终端窗口
 tnoremap <leader>te    <C-\><C-n> :q!<CR>
 
+
+
+call plug#begin()
+Plug 'terryma/vim-expand-region' 
+Plug 'tpope/vim-surround'
+Plug 'scrooloose/nerdtree' 
+Plug 'xuyuanp/nerdtree-git-plugin' 
+Plug 'preservim/nerdcommenter'
+Plug 'vim-airline/vim-airline'
+Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
+call plug#end()
+
+
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
