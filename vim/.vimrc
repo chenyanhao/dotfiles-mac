@@ -43,9 +43,9 @@ call plug#begin('~/.vim/plugged') " plugin managemant: vim-plug
 Plug 'colepeters/spacemacs-theme.vim' " theme of spaceemacs
 Plug 'terryma/vim-expand-region' 
 Plug 'tpope/vim-surround'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " The Vim plugin will pick up fzf binary available on the system. 
+Plug 'junegunn/fzf' " The Vim plugin will pick up fzf binary available on the system. 
 Plug 'junegunn/fzf.vim' " 注意 fzf.vim 和 fzf 要一起安装才可以使用，fzf.vim 使得使用方式学习成本更低，fzf 直接使用具有一定的学习成本。习惯 fzf 原生的可以不装 fzf.vim
-Plug 'Yggdroot/LeaderF', { 'do': '.\install.bat' } " leaderf 和 fzf 各有所长，配合使用。Windows 下 fzf 安装不便的话，可以用 leaderf
+Plug 'Yggdroot/LeaderF' " leaderf 和 fzf 各有所长，配合使用。Windows 下 fzf 安装不便的话，可以用 leaderf
 Plug 'scrooloose/nerdtree' " 树形目录
 Plug 'xuyuanp/nerdtree-git-plugin' " nerdtree 中显示出文件的修改状态，开箱即用
 Plug 'vim-airline/vim-airline'
@@ -66,6 +66,15 @@ colorscheme spacemacs-theme
 let g:NERDSpaceDelims = 1
 " use compact syntax for prettified multi-line comments
 let g:NERDCompactSexyComs = 1
+
+
+" --------- leaderF  --------
+" 悬浮窗口展示
+let g:Lf_WindowPosition = 'popup'
+" C-p 展示预览
+let g:Lf_PreviewInPopup = 1
+
+
 "=============================插件相关 end  ===============================
 
 
