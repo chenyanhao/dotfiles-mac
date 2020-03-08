@@ -253,7 +253,8 @@ cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 
 
-" C-c C-v to yank and pull
+" C-c C-v to yank and pull。
+" 输入不可见字符时需要先输入前导键 C-v，如果这里设置 C-v 是粘贴，则会冲突，自行取舍
 vnoremap <C-c> "+y
 map <C-v> "+p
 imap <C-v> <ESC>"+pa
