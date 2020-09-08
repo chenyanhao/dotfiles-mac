@@ -21,6 +21,7 @@ set shiftwidth=4
 " 共享外部剪切板
 set clipboard=unnamed
 
+
 " 定义快捷键的前缀，即<Leader>
 let mapleader = "\<Space>"
 
