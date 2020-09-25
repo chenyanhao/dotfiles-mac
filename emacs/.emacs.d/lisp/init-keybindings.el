@@ -39,17 +39,26 @@
 
 
 
+
+
 (with-eval-after-load 'dired  ;;dired-mode-map必须要在Dired-Mode进入后才有效，所以这里加这句
   (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file))
 
 
-;; -----------直接用Ctrl+TAB切换Buffer------------
-;; -----默认切换Buffer是"C-x b"，较繁琐，改为C-TAB提高效率--------
+;; -----------Ctrl+TAB切换最近的两个Buffer------------
 (global-set-key (kbd "C-<tab>") #'(lambda ()
 				    (interactive)
 				    (switch-to-buffer (other-buffer (current-buffer) 1))))
 
 
+;; 切换 buffer
+(global-set-key (kbd "M-<left>") 'previous-buffer)
+(global-set-key (kbd "M-<right>") 'next-buffer)
+;; ignore useless buffers while switching，切换时忽略掉 * 打头的 buffer
+(set-frame-parameter (selected-frame) 'buffer-predicate (lambda (buf) (not (string-match-p "^*" (buffer-name buf)))))
+
+;; list-buffers
+(global-set-key (kbd "C-x C-b") 'list-buffers)
 
 (global-set-key (kbd "C-M-\\") 'indent-region-or-buffer)
 
