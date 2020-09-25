@@ -123,6 +123,20 @@
 ;; 更加方便的在不同 dired-buffer 间复制(复制时不需要键入 dest-buffer 的路径)
 (setq dired-dwin-target t)
 
+;; 删除时将文件或者文件夹移到回收站，而不是直接删掉
+(setq delete-by-moving-to-trash t)
+
+;; ---------Winner-Mode配置---------------
+;; C-c left:winner-redo; C-c right:winner-undo; M-number: 快速跳转到指定的窗口
+(winner-mode t)
+
+;; enlarge-window: 增加当前窗口高度
+;; shrink-window: 减少当前窗口高度
+;; enlarge-window-horizontally: 增加当前窗口宽度
+;; shrink-window-horizontally: 减小当前窗口宽度
+
+
+
 ;; setq和setq-default的区别：
 ;; diff between setq and setq-default
 ;; setq: changes the "buffer-local" variable

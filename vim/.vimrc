@@ -113,7 +113,7 @@ set noswapfile
 
 " 高亮显示当前行/列
 set cursorline
-set cursorcolumn
+" set cursorcolumn
 
 "设置C/C++方式自动对齐
 set autoindent

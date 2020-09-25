@@ -108,6 +108,5 @@ alias vscode='open -a "Visual Studio Code"'
 # put /usr/local/bin first because homebrew's installation is under this path
 export PATH=/usr/local/bin:$PATH
 
-
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
 
