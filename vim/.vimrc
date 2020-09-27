@@ -44,8 +44,10 @@ Plug 'colepeters/spacemacs-theme.vim' " theme of spaceemacs
 Plug 'terryma/vim-expand-region' 
 Plug 'tpope/vim-surround'
 Plug 'junegunn/fzf' " The Vim plugin will pick up fzf binary available on the system. 
-Plug 'junegunn/fzf.vim' " 注意 fzf.vim 和 fzf 要一起安装才可以使用，fzf.vim 使得使用方式学习成本更低，fzf 直接使用具有一定的学习成本。习惯 fzf 原生的可以不装 fzf.vim
-Plug 'Yggdroot/LeaderF' " leaderf 和 fzf 各有所长，配合使用。Windows 下 fzf 安装不便的话，可以用 leaderf
+Plug 'junegunn/fzf.vim' " 注意 fzf.vim 实际上是 fzf 的一个 vim 前端，因此和 fzf 要一起安装才可以使用。fzf.vim 使得使用方式学习成本更低。fzf 直接使用具有一定的学习成本。习惯 fzf 原生的也可以不装 fzf.vim
+Plug 'Yggdroot/LeaderF' " leaderf 和 fzf 各有所长，配合使用。Windows 下 fzf 安装不便的话，可以用 leaderf。注意，leaderf 依赖 python，如果 vim 版本没有 python 支持，推荐用fzf
+
+
 Plug 'scrooloose/nerdtree' " 树形目录
 Plug 'xuyuanp/nerdtree-git-plugin' " nerdtree 中显示出文件的修改状态，开箱即用
 Plug 'vim-airline/vim-airline'
@@ -233,7 +235,7 @@ nnoremap w+ <C-w>+
 nnoremap w- <C-w>-
 nnoremap w> <C-w>>
 nnoremap w< <C-w><
-nnoremap <leader>ww <C-w><C-w>  “ 切换窗口
+nnoremap <leader>ww <C-w><C-w>  " 切换窗口
 
 " 在 insert 和 command 下可以使用 EMACS 快捷键
 " moving aroung in insert mode
