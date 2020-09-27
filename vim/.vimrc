@@ -87,11 +87,10 @@ let g:Lf_PreviewInPopup = 1
 let g:fzf_layout = {'down': '~40%'}
 
 " --------- alrline  --------
+" tabline注意分清tab和buffer，它既会显示tab，也会显示buffer。配置时注意区分清楚
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail' " 显示标签的样式为只显示文件名
-let g:airline#extensions#tabline#buffer_nr_show = 1        " tabline中buffer显示编号
-let g:airline#extensions#tabline#tab_min_count = 2     " 至少 2 个 tab 时才展示 tabline                                  
-
+let g:airline#extensions#tabline#buffer_nr_show = 1 " tabline中buffer显示编号，然后输入命令 `:b num` 即可跳转到编号为num的buffer
 
 
 "=============================插件相关 end  ===============================
@@ -273,9 +272,6 @@ cnoremap <C-b> <Left>
 cnoremap <C-f> <Right>
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
-
-
-nnoremap <Leader>tn :tabnew .<CR>  
 
 
 " C-c C-v to yank and pull。
