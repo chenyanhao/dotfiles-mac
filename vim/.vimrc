@@ -43,10 +43,14 @@ call plug#begin('~/.vim/plugged') " plugin managemant: vim-plug
 Plug 'colepeters/spacemacs-theme.vim' " theme of spaceemacs
 Plug 'terryma/vim-expand-region' 
 Plug 'tpope/vim-surround'
-Plug 'junegunn/fzf' " The Vim plugin will pick up fzf binary available on the system. 
-Plug 'junegunn/fzf.vim' " 注意 fzf.vim 实际上是 fzf 的一个 vim 前端，因此和 fzf 要一起安装才可以使用。fzf.vim 使得使用方式学习成本更低。fzf 直接使用具有一定的学习成本。习惯 fzf 原生的也可以不装 fzf.vim
-Plug 'Yggdroot/LeaderF' " leaderf 和 fzf 各有所长，配合使用。Windows 下 fzf 安装不便的话，可以用 leaderf。注意，leaderf 依赖 python，如果 vim 版本没有 python 支持，推荐用fzf
 
+ " The Vim plugin will pick up fzf binary available on the system. fzf#install() is optional, it makes sure that you have the latest binary
+Plug 'junegunn/fzf' , { 'do': { -> fzf#install() } }
+" Plug 'junegunn/fzf' 
+ " 注意 fzf.vim 实际上是 fzf 的一个 vim 前端，因此和 fzf 要一起安装才可以使用。fzf.vim 使得使用方式学习成本更低。fzf 直接使用具有一定的学习成本。
+Plug 'junegunn/fzf.vim'
+
+Plug 'Yggdroot/LeaderF' " leaderf 和 fzf 各有所长，配合使用。Windows 下 fzf 安装不便的话，可以用 leaderf。注意，leaderf 依赖 python，如果 vim 版本没有 python 支持，推荐用fzf
 
 Plug 'scrooloose/nerdtree' " 树形目录
 Plug 'xuyuanp/nerdtree-git-plugin' " nerdtree 中显示出文件的修改状态，开箱即用
@@ -68,13 +72,26 @@ colorscheme spacemacs-theme
 let g:NERDSpaceDelims = 1
 " use compact syntax for prettified multi-line comments
 let g:NERDCompactSexyComs = 1
+" show hidden file
+let NERDTreeShowHidden=1
+
 
 
 " --------- leaderF  --------
 " 悬浮窗口展示
 let g:Lf_WindowPosition = 'popup'
-" C-p 展示预览
+" 展示预览
 let g:Lf_PreviewInPopup = 1
+
+" --------- fzf  --------
+let g:fzf_layout = {'down': '~40%'}
+
+" --------- alrline  --------
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail' " 显示标签的样式为只显示文件名
+let g:airline#extensions#tabline#buffer_nr_show = 1        " tabline中buffer显示编号
+let g:airline#extensions#tabline#tab_min_count = 2     " 至少 2 个 tab 时才展示 tabline                                  
+
 
 
 "=============================插件相关 end  ===============================
@@ -181,7 +198,8 @@ set expandtab
 "设置编码方式
 set encoding=utf-8
 "自动判断编码时 依次尝试一下编码
-set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+set fileencodings=ucs-bom,utf-8,utf-16,gbk,big5,gb18030,latin1
+set termencoding=utf-8
 
 " 检测文件类型
 filetype on
@@ -267,6 +285,10 @@ nnoremap <Leader>tn :tabnew .<CR>
 
 nnoremap <C-a> ggvG
 
+
+" 设置tab键切换 buffer
+nmap <TAB> :bn<cr>
+nmap <C-TAB> :bp<cr>  
 
 "above add by cyh
 "————————————————— end —————————————————————
