@@ -1,3 +1,4 @@
 (
+ (:id "sha1:5cce342a9a99ff6632dc081a41f5f4a28e8e10fc" :fingerprint "sha1:0a:89:8f:b8:29:e7:d9:64:0b:65:b0:6c:5f:b4:22:68:ff:0d:74:fc" :host "raw.githubusercontent.com:443" :conditions (:insecure :unknown-ca :invalid))
  (:id "sha1:306e34699eeabfc90ddbe0b5d0fd1655957338b5" :fingerprint "sha1:68:0f:a6:75:8f:84:30:c2:f4:2e:c0:9a:02:c1:1c:d2:5f:1c:98:02" :host "elpa.emacs-china.org:443" :conditions (:insecure :unknown-ca :invalid))
 )

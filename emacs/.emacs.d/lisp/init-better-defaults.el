@@ -41,7 +41,7 @@
 (when *win*
   (setq default-directory "E:/Dev-Documents/WS-emacs/"))
 (when *mac*
-  (setq default-directory "~/Documents/WS-Emacs/"))
+  (setq default-directory "~/TeamFile/yuanjiu143236/Documents/WS-Emacs/"))
 
 
 
