@@ -129,6 +129,8 @@ set history=25
 set nobackup
 set noswapfile
 
+" 允许在有未保存的修改时切换缓冲区，此时的修改由 vim 负责保存
+set hidden
 
 " 高亮显示当前行/列
 set cursorline
