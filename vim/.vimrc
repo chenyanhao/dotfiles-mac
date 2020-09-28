@@ -76,6 +76,10 @@ let g:NERDCompactSexyComs = 1
 let NERDTreeShowHidden=1
 
 
+" --------- nerdtree  --------
+" open NERDTree automatically when vim starts up
+autocmd vimenter * NERDTree
+
 
 " --------- leaderF  --------
 " 悬浮窗口展示
@@ -92,6 +96,10 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail' " 显示标签的样式为只显示文件名
 let g:airline#extensions#tabline#buffer_nr_show = 1 " tabline中buffer显示编号，然后输入命令 `:b num` 即可跳转到编号为num的buffer
 
+
+" --------- vim-expand-region  --------
+vmap v <Plug>(expand_region_expand)
+vmap V <Plug>(expand_region_shrink)
 
 "=============================插件相关 end  ===============================
 
@@ -181,6 +189,7 @@ set mouse=a
 
 " 共享外部剪切板
 set clipboard=unnamed
+set clipboard=unnamedplus
 
 " 设置编辑时制表符占用空格数
 set tabstop=4
@@ -240,21 +249,25 @@ set showmode
 "——————————————— start ———————————————————————
 "add by cyh 2016/5/31
 
+
 " 定义快捷键的前缀，即<Leader>
 let mapleader = "\<Space>"
 
 " noremap <space> :
+
 
 " 水平切分分屏
 nnoremap <leader>w- :sp<CR>  " <C-w>s 也可以
 " 竖直切分分屏
 nnoremap <leader>w/ :vsp<CR> " <C-w>v 也可以
 
-nnoremap w+ <C-w>+
-nnoremap w- <C-w>-
-nnoremap w> <C-w>>
-nnoremap w< <C-w><
-nnoremap <leader>ww <C-w><C-w>  " 切换窗口
+
+nnoremap <s-up> <C-w>+    " 纵向变长
+nnoremap <s-down> <C-w>-  " 纵向变短
+nnoremap <s-right> <C-w>> " 往右
+nnoremap <s-left> <C-w><  " 往左
+nnoremap <C-w> <C-w><C-w>  " 切换窗口
+
 
 " 在 insert 和 command 下可以使用 EMACS 快捷键
 " moving aroung in insert mode
@@ -264,7 +277,6 @@ inoremap <C-b> <Left>
 inoremap <C-f> <Right>
 inoremap <C-a> <Home>
 inoremap <C-e> <End>
-
 " moving aroung in command mode
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>

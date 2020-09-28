@@ -1,5 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/Users/yj/dotfiles-mac4444test/vim'
+let g:netrw_dirhist_0='/Users/yj/dotfiles-mac/vim/.vim'
+let g:netrw_dirhist_9='/Users/yj/dotfiles-mac/vim'
+let g:netrw_dirhist_8='/Users/yj/dotfiles-mac/vim/.vim'
+let g:netrw_dirhist_7='/Users/yj/dotfiles-mac/vim'
+let g:netrw_dirhist_6='/Users/yj'
+let g:netrw_dirhist_5='/Users/yj/dotfiles-mac'
+let g:netrw_dirhist_4='/Users/yj'
 let g:netrw_dirhist_3='/Users/yj/dotfiles-mac/emacs/.emacs.d/lisp'
 let g:netrw_dirhist_2='/Users/yj/dotfiles-mac/emacs/.emacs.d'
-let g:netrw_dirhist_1='/Users/yj/dotfiles-mac/emacs/.emacs.d/lisp'
