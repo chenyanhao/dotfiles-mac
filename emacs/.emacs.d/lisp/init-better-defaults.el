@@ -126,15 +126,28 @@
 ;; 删除时将文件或者文件夹移到回收站，而不是直接删掉
 (setq delete-by-moving-to-trash t)
 
+;; Auto-refresh dired on file change
+(add-hook 'dired-mode-hook 'auto-revert-mode)
+
 ;; ---------Winner-Mode配置---------------
 ;; C-c left:winner-redo; C-c right:winner-undo; M-number: 快速跳转到指定的窗口
 (winner-mode t)
+
+
+
+;; ---------Occur-Mode配置---------------
+;; 使得 occur-mode 自动跳转到弹出的 window（默认的配置不会）
+(add-hook 'occur-hook
+          '(lambda ()
+             (switch-to-buffer-other-window "*Occur*")))
+
+
+
 
 ;; enlarge-window: 增加当前窗口高度
 ;; shrink-window: 减少当前窗口高度
 ;; enlarge-window-horizontally: 增加当前窗口宽度
 ;; shrink-window-horizontally: 减小当前窗口宽度
-
 
 
 ;; setq和setq-default的区别：

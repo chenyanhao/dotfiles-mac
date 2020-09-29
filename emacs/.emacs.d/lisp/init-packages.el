@@ -28,7 +28,7 @@
 				 smartparens ;; 括号自动补全
 
 				 exec-path-from-shell ;; 针对mac，让mac系统下面的命令行程序可见
-				 popwin
+				 popwin ;; temporary buffers will be shown as a popup window, and it can be closed by C-g in anytime
 				 reveal-in-osx-finder ;; 针对Mac，可以在finder中打开当前文件
 				 iedit ;; 同时编辑多个区域
 				 org-pomodoro
@@ -44,7 +44,7 @@
 				 all-the-icons-dired ;; dired-mode 也使用 all-the-icons 主题
 				 all-the-icons-ivy ;; ivy-mode 也使用 all-the-icons 主题
 
-				 ;; projectile ;; 项目维度 find-file、grep 等
+				 ;; projectile ;; project management and navigation, provide features operating on a project level 
 				 treemacs ;; 树形文件浏览器
 				 treemacs-all-the-icons ;; treemacs 使用 all-the-icons 主题
 				 treemacs-evil ;; If you use evil don’t forget to install 
