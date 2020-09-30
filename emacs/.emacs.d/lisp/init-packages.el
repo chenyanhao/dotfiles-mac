@@ -27,6 +27,8 @@
 				 counsel ;; needed for swiper
 				 smartparens ;; 括号自动补全
 
+				 spaceline ;; spacemacs's mode-line theme
+
 				 exec-path-from-shell ;; 针对mac，让mac系统下面的命令行程序可见
 				 popwin ;; temporary buffers will be shown as a popup window, and it can be closed by C-g in anytime
 				 reveal-in-osx-finder ;; 针对Mac，可以在finder中打开当前文件
@@ -79,8 +81,11 @@
 
 ;;==========================插件配置================================
 ;; 应用主题
-;;(load-theme 'monokai t)
+;; (load-theme 'monokai t)
 (load-theme 'spacemacs-dark t)
+(require 'spaceline-config)
+(spaceline-spacemacs-theme)
+
 
 ;; all-the-icons 相关配置
 (require 'all-the-icons) ;; all-the-icons
