@@ -27,7 +27,7 @@
 				 counsel ;; needed for swiper
 				 smartparens ;; 括号自动补全
 
-				 spaceline ;; spacemacs's mode-line theme
+				 spaceline ;; spacemacs's mode-line theme，该 package 会自动会安装其依赖 powerline
 
 				 exec-path-from-shell ;; 针对mac，让mac系统下面的命令行程序可见
 				 popwin ;; temporary buffers will be shown as a popup window, and it can be closed by C-g in anytime
@@ -107,6 +107,11 @@
 ;; window-numbering和powerline冲突，即如果有powerline，不会显示window编号
 (window-numbering-mode 1)
 
+
+;; ivy fuzzy match
+(setq ivy-re-builders-alist
+      '((ivy-switch-buffer . ivy--regex-plus)
+        (t . ivy--regex-fuzzy)))
 
 ;; swiper/counsel配置
 (ivy-mode 1)

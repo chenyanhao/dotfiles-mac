@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "spaceline-config" "spaceline-config.el" (24435
-;;;;;;  7098 706913 657000))
-;;; Generated autoloads from spaceline-config.el
+;;;### (autoloads nil "spaceline-config" "../../../../../.emacs.d/elpa/spaceline-20191230.1221/spaceline-config.el"
+;;;;;;  "f74a33caa332d3f2e2e685e80dfafbe9")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/spaceline-20191230.1221/spaceline-config.el
 
 (autoload 'spaceline-spacemacs-theme "spaceline-config" "\
 Install the modeline used by Spacemacs.
@@ -57,8 +57,12 @@ This minor mode requires info+.
 
 ;;;***
 
-;;;### (autoloads nil nil ("spaceline-pkg.el" "spaceline-segments.el"
-;;;;;;  "spaceline.el") (24435 7098 705858 210000))
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/spaceline-20191230.1221/spaceline-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/spaceline-20191230.1221/spaceline-config.el"
+;;;;;;  "../../../../../.emacs.d/elpa/spaceline-20191230.1221/spaceline-pkg.el"
+;;;;;;  "../../../../../.emacs.d/elpa/spaceline-20191230.1221/spaceline-segments.el"
+;;;;;;  "../../../../../.emacs.d/elpa/spaceline-20191230.1221/spaceline.el")
+;;;;;;  (24435 65107 382702 318000))
 
 ;;;***
 
