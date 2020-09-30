@@ -55,14 +55,21 @@ cnoremap <C-f> <Right>
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 
-" C-c C-v to yank and pull
-vnoremap <C-c> "+y
-map <C-v> "+p
-imap <C-v> <ESC>"+pa
-vmap <C-v> d"+p
+" C-c C-v to yank and pull。
+" 输入不可见字符时需要先输入前导键 C-v，如果这里设置 C-v 是粘贴，则会冲突，自行取舍
+" vnoremap <C-c> "+y
+" map <C-v> "+p
+" imap <C-v> <ESC>"+pa
+" vmap <C-v> d"+p
 
 " 支持 C-a 全选
 nnoremap <C-a> ggvG
+
+
+" 设置tab键切换 buffer
+nmap <TAB> :bn<cr>
+nmap <C-TAB> :bp<cr> 
+
 
 
 " 水平分屏打开内置终端
@@ -83,9 +90,38 @@ Plug 'scrooloose/nerdtree'
 Plug 'xuyuanp/nerdtree-git-plugin' 
 Plug 'preservim/nerdcommenter'
 Plug 'vim-airline/vim-airline'
-Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
+Plug 'easymotion/vim-easymotion'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'Yggdroot/LeaderF'
 call plug#end()
 
 
+
+"=============================插件相关 start ===============================
+" --------- nerdcommenter --------
+" add spaces after comment delimiters
 let g:NERDSpaceDelims = 1
+" use compact syntax for prettified multi-line comments
 let g:NERDCompactSexyComs = 1
+" show hidden file
+let NERDTreeShowHidden=1
+
+
+" --------- nerdtree  --------
+" open NERDTree automatically when vim starts up
+autocmd vimenter * NERDTree
+
+
+" --------- leaderF  --------
+" 悬浮窗口展示
+let g:Lf_WindowPosition = 'popup'
+" 展示预览
+let g:Lf_PreviewInPopup = 1
+
+
+" --------- vim-expand-region  --------
+vmap v <Plug>(expand_region_expand)
+vmap V <Plug>(expand_region_shrink)
+
+"=============================插件相关 end  ===============================
+
