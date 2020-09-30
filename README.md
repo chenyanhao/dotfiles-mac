@@ -43,3 +43,58 @@ home目录/
 
 具体详见 http://farseerfc.me/zhs/using-gnu-stow-to-manage-your-dotfiles.html
 
+
+
+
+
+# 编辑器们的快捷键怎么设置更容易记忆且不冲突？
+
+
+该问题本质上是一个如何组织和分类的问题，一个好的组织和分类的前提下，每一个分类公用一个前缀，会让快捷键更加方便记忆、归纳和管理。个人觉得编辑器的功能可以分为如下几类，其中 1-9 是 general 部分，即各个编辑器都会有。
+
+一、basic editing
+
+二、cursor and selection 
+- basic cursor movement
+- multi cursor
+- expand region
+
+三、search/grep and replace 
+- grep in project
+- grep in single file
+
+四、programming language editing 
+- suggestions
+- document
+- definitions
+- references
+- LSP about
+
+
+五、navigation
+- go to symbol
+- previous/next cursor position
+
+
+六、file management
+- new/open/save/close file
+- recent open files
+- find file in project/directory
+
+
+七、display
+- zoom in/out
+- show search
+- fonts
+- themes
+- powerline
+
+
+八、debug
+九、execution
+十、buffer
+十一、window
+十二、TODO
+
+
+
