@@ -97,7 +97,7 @@
 (require 'treemacs)
 (define-key treemacs-mode-map [mouse-1] 'treemacs-single-click-expand-action) ;; 允许鼠标操作，左键单击
 (define-key treemacs-mode-map [mouse-3] 'treemacs-rightclick-menu) ;; 允许鼠标操作，右键打开操作菜单
-;; (treemacs-icons-dired-mode t)
+(treemacs-icons-dired-mode t)
 
 
 

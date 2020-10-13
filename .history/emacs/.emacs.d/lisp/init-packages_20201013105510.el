@@ -89,7 +89,7 @@
 
 ;; all-the-icons 相关配置
 (require 'all-the-icons) ;; all-the-icons
-(add-hook 'dired-mode-hook 'all-the-icons-dired-mode) ;; all-the-icons-dired
+;; (add-hook 'dired-mode-hook 'all-the-icons-dired-mode) ;; all-the-icons-dired
 (all-the-icons-ivy-setup) ;; all-the-icons-ivy 
 
 
@@ -97,7 +97,7 @@
 (require 'treemacs)
 (define-key treemacs-mode-map [mouse-1] 'treemacs-single-click-expand-action) ;; 允许鼠标操作，左键单击
 (define-key treemacs-mode-map [mouse-3] 'treemacs-rightclick-menu) ;; 允许鼠标操作，右键打开操作菜单
-;; (treemacs-icons-dired-mode t)
+(treemacs-icons-dired-mode t)
 
 
 
