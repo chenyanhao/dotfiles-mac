@@ -1,5 +1,10 @@
 */.DS_Store
 .DS_Store
 
+*.elc
+
+.history
+.history/*
+
 dotconfig/qBittorrent
 dotconfig/qBittorrent/*
