@@ -43,14 +43,14 @@
 				 
 				 all-the-icons ;; 图标库，all-the-icons 默认主题
 				 ;; spaceline-all-the-icons ;; 图标库，spaceline 主题
-				 all-the-icons-dired ;; dired-mode 也使用 all-the-icons 主题
-				 all-the-icons-ivy ;; ivy-mode 也使用 all-the-icons 主题
+				 ;; all-the-icons-dired ;; dired-mode 也使用 all-the-icons 主题
+				 ;; all-the-icons-ivy ;; ivy-mode 也使用 all-the-icons 主题
 
 				 ;; projectile ;; project management and navigation, provide features operating on a project level 
 				 treemacs ;; 树形文件浏览器
 				 treemacs-all-the-icons ;; treemacs 使用 all-the-icons 主题
 				 treemacs-evil ;; If you use evil don’t forget to install 
-				 ;; treemacs-icons-dired ;; dired-mode 使用 treemacs 图标主题。all-the-icon-dired 需要下载字体，时间教长，不方便的话可以直接使用该 package
+				 treemacs-icons-dired ;; dired-mode 使用 treemacs 图标主题。all-the-icon-dired 需要下载字体，时间教长，不方便的话可以直接使用该 package
 
 
 				 window-numbering
