@@ -46,7 +46,7 @@
 				 all-the-icons-dired ;; dired-mode 也使用 all-the-icons 主题
 				 all-the-icons-ivy ;; ivy-mode 也使用 all-the-icons 主题
 
-				 ;; projectile ;; project management and navigation, provide features operating on a project level 
+				 ;; projectile ;; project management and navigation, provide features operating on a project level 和 helm 一样，整体会拖累性能，慎用
 				 treemacs ;; 树形文件浏览器
 				 treemacs-all-the-icons ;; treemacs 使用 all-the-icons 主题
 				 treemacs-evil ;; If you use evil don’t forget to install 
