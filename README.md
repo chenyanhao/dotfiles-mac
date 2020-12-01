@@ -98,3 +98,8 @@ home目录/
 
 
 
+以上算是一种比较细致的划分方法，如果不想要这么细致，粗粒度一点，基本的编辑功能方面，可以划分为，
+- move/search/edit/file
+- programming language
+- other
+
