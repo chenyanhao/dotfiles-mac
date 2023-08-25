@@ -184,6 +184,12 @@ set hlsearch
 " 禁止光标闪烁
 set gcr=a:block-blinkon0
 
+" 配置光标形状
+set guicursor=n-v-c:block " normal-visual-command mode, use block style cursor
+set guicursor+=i-ci:ver30 " insert or Command-line insert mode, user ver style cursor
+set guicursor+=r-cr:hor30 " replace or Command-Line replace mode, user hor style cursor
+
+
 "设置鼠标可用
 set mouse=a
 
